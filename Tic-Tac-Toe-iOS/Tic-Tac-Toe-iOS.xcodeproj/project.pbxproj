@@ -13,6 +13,7 @@
 		3F66743F255C64B900E29DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F66743D255C64B900E29DAF /* Main.storyboard */; };
 		3F667441255C64BB00E29DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F667440255C64BB00E29DAF /* Assets.xcassets */; };
 		3F667444255C64BB00E29DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F667442255C64BB00E29DAF /* LaunchScreen.storyboard */; };
+		3FBC52F525636FD000FF64CB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC52F425636FD000FF64CB /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F667440255C64BB00E29DAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F667443255C64BB00E29DAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F667445255C64BB00E29DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBC52F425636FD000FF64CB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				3F667437255C64B900E29DAF /* AppDelegate.swift */,
 				3F667439255C64B900E29DAF /* SceneDelegate.swift */,
 				3F66743B255C64B900E29DAF /* ViewController.swift */,
+				3FBC52F425636FD000FF64CB /* HistoryViewController.swift */,
 				3F66743D255C64B900E29DAF /* Main.storyboard */,
 				3F667440255C64BB00E29DAF /* Assets.xcassets */,
 				3F667442255C64BB00E29DAF /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				3F66743C255C64B900E29DAF /* ViewController.swift in Sources */,
 				3F667438255C64B900E29DAF /* AppDelegate.swift in Sources */,
 				3F66743A255C64B900E29DAF /* SceneDelegate.swift in Sources */,
+				3FBC52F525636FD000FF64CB /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

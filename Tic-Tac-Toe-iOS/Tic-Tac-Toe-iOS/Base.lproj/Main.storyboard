@@ -30,7 +30,7 @@
         <!--History-->
         <scene sceneID="Lsd-FI-ZrV">
             <objects>
-                <viewController id="EeW-oD-rv2" sceneMemberID="viewController">
+                <viewController id="EeW-oD-rv2" customClass="HistoryViewController" customModule="Tic_Tac_Toe_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SpF-GG-i83">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,17 +107,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-oO-ZT0">
-                                <rect key="frame" x="313" y="468" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yon-oO-ZT0">
+                                <rect key="frame" x="313" y="468" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-b4-1vI">
-                                <rect key="frame" x="184" y="599" width="46" height="30"/>
+                                <rect key="frame" x="179" y="597" width="62" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Reset"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BH7-bu-gfp"/>
@@ -152,10 +153,19 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="clock.arrow.circlepath" catalog="system" id="snA-BO-XiJ"/>
+                    <connections>
+                        <outlet property="PlayedLabel" destination="lWD-S2-1gP" id="4lF-Uo-Fki"/>
+                        <outlet property="loseOLabel" destination="NsE-jx-BKG" id="Vcg-zz-xFN"/>
+                        <outlet property="loseXLabel" destination="msO-Cs-7XA" id="iNM-gI-fej"/>
+                        <outlet property="playedLabel" destination="lWD-S2-1gP" id="XgJ-YX-DG2"/>
+                        <outlet property="winOLabel" destination="9Hc-pS-Lb8" id="Wsq-PC-YXB"/>
+                        <outlet property="winXLabel" destination="lDy-Fd-sKr" id="oIh-E7-giB"/>
+                        <outlet property="winnerLabel" destination="Yon-oO-ZT0" id="c6i-sz-SOh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWk-YX-A0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="70"/>
+            <point key="canvasLocation" x="1005.7971014492755" y="69.642857142857139"/>
         </scene>
         <!--Game-->
         <scene sceneID="tne-QT-ifu">
