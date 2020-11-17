@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,15 +112,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-b4-1vI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-b4-1vI">
                                 <rect key="frame" x="179" y="597" width="62" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Reset"/>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="BH7-bu-gfp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="kiz-a0-rSx" firstAttribute="leading" secondItem="Tnf-Wr-0nr" secondAttribute="trailing" constant="-94" id="0W8-VK-IHv"/>
                             <constraint firstItem="NsE-jx-BKG" firstAttribute="leading" secondItem="msO-Cs-7XA" secondAttribute="trailing" constant="-11" id="0jk-26-mmc"/>
@@ -151,8 +148,9 @@
                             <constraint firstItem="Tnf-Wr-0nr" firstAttribute="top" secondItem="Zlj-32-xbT" secondAttribute="bottom" constant="25" id="waG-Yl-Rxe"/>
                             <constraint firstItem="Tnf-Wr-0nr" firstAttribute="leading" secondItem="Zlj-32-xbT" secondAttribute="trailing" constant="-93" id="weB-2J-N4d"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="BH7-bu-gfp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History" image="clock.arrow.circlepath" catalog="system" id="snA-BO-XiJ"/>
+                    <tabBarItem key="tabBarItem" title="History" id="snA-BO-XiJ"/>
                     <connections>
                         <outlet property="PlayedLabel" destination="lWD-S2-1gP" id="4lF-Uo-Fki"/>
                         <outlet property="loseOLabel" destination="NsE-jx-BKG" id="Vcg-zz-xFN"/>
@@ -184,40 +182,58 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-iH-Nkr">
                                 <rect key="frame" x="184" y="392" width="46" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INs-QI-dOp">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INs-QI-dOp" userLabel="Square01 Button">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LV8-oZ-iUZ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6W-q0-esd">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6W-q0-esd">
                                         <rect key="frame" x="0.0" y="128" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOM-H7-aDo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwY-Cu-O0a">
                                         <rect key="frame" x="0.0" y="256" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG7-Wa-8zK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="io4-M2-YBc">
                                 <rect key="frame" x="59" y="392" width="46" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-XG-QyI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-XG-QyI">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yf8-kY-Abq"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-cL-TBM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-cL-TBM" userLabel="Square10 Button">
                                         <rect key="frame" x="0.0" y="128" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFC-gB-Fpq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkB-Vh-NUe">
                                         <rect key="frame" x="0.0" y="256" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ccl-oR-rza"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -230,20 +246,29 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-tH-BQa">
                                 <rect key="frame" x="310" y="392" width="46" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-Ne-g78">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-Ne-g78" userLabel="Square02 Button">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6w-zI-aaF"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94X-MA-xdi">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94X-MA-xdi">
                                         <rect key="frame" x="0.0" y="128" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LV-33-k48"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMA-GS-KT2">
                                         <rect key="frame" x="0.0" y="256" width="46" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor"/>
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrA-gg-Z0m"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -253,10 +278,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyb-DX-Dgc">
+                                <rect key="frame" x="186" y="44" width="122.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Kyb-DX-Dgc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="186" id="5o0-d8-5rV"/>
                             <constraint firstItem="io4-M2-YBc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="6bU-UW-FMn"/>
                             <constraint firstItem="X0Q-qM-5eH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="7XN-tc-gUR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kOH-tH-BQa" secondAttribute="trailing" constant="6" id="ATe-mV-Ctr"/>
@@ -274,12 +305,27 @@
                             <constraint firstItem="io4-M2-YBc" firstAttribute="bottom" secondItem="eEc-iH-Nkr" secondAttribute="bottom" id="jcZ-ZE-Tt0"/>
                             <constraint firstItem="iRL-UN-Hi7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4qC-vU-4fj" secondAttribute="bottom" constant="93" id="njN-ZO-C4y"/>
                             <constraint firstItem="eEc-iH-Nkr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q5z-N3-rXr"/>
+                            <constraint firstItem="Kyb-DX-Dgc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r97-M3-RFr"/>
                             <constraint firstItem="kOH-tH-BQa" firstAttribute="leading" secondItem="eEc-iH-Nkr" secondAttribute="trailing" constant="80" id="ryS-Ef-3JL"/>
                             <constraint firstItem="iRL-UN-Hi7" firstAttribute="top" secondItem="X0Q-qM-5eH" secondAttribute="bottom" constant="87" id="vvd-jY-NlA"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Game" image="grid" catalog="system" id="NEN-dj-Pml"/>
                     <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="TurnLabel" destination="X0Q-qM-5eH" id="ZEZ-JP-DhZ"/>
+                        <outlet property="WinnerLabel" destination="Kyb-DX-Dgc" id="3Y2-eN-iu8"/>
+                        <outlet property="square01_0Button" destination="4sq-cL-TBM" id="9LW-hH-Qbl"/>
+                        <outlet property="square0_0Button" destination="Gqb-XG-QyI" id="cjU-Ej-amH"/>
+                        <outlet property="square0_1Button" destination="INs-QI-dOp" id="SJN-mV-Ggn"/>
+                        <outlet property="square0_2Button" destination="TKn-Ne-g78" id="phm-Jh-5zX"/>
+                        <outlet property="square1_1Button" destination="b6W-q0-esd" id="349-Z3-Ll1"/>
+                        <outlet property="square1_2Button" destination="94X-MA-xdi" id="Lzi-Gg-Dc8"/>
+                        <outlet property="square2_0Button" destination="ZkB-Vh-NUe" id="Src-K5-717"/>
+                        <outlet property="square2_1Button" destination="qwY-Cu-O0a" id="6Cp-l2-p7q"/>
+                        <outlet property="square2_2Button" destination="oMA-GS-KT2" id="vSa-8g-ias"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,13 +334,6 @@
     </scenes>
     <resources>
         <image name="Image" width="260" height="260"/>
-        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="grid" catalog="system" width="128" height="112"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
