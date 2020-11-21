@@ -21,24 +21,25 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var loseOLabel: UILabel!
     @IBOutlet weak var winnerLabel: UILabel!
     
-    func likelyWinner(){
-        
+    @IBAction func Reset(_ sender: Any) {
+        GameStats.shared.reset()
+        playedLabel.text = String(GameStats.shared.gamesPlayed)
+        winXLabel.text = String(GameStats.shared.winX)
+        winOLabel.text = String(GameStats.shared.winO)
+        loseXLabel.text = String(GameStats.shared.loseX)
+        loseOLabel.text = String(GameStats.shared.loseO)
+        winnerLabel.text = GameStats.shared.predictWinner()
     }
     
-    func reset(){
-        
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //playedLabel.text =
-        //winXLabel.text =
-        //winOLabel.text =
-        //loseXLabel.text =
-        //loseOLabel.text =
-        //winnerLabel.text =
-        
-
+        playedLabel.text = String(GameStats.shared.gamesPlayed)
+        winXLabel.text = String(GameStats.shared.winX)
+        winOLabel.text = String(GameStats.shared.winO)
+        loseXLabel.text = String(GameStats.shared.loseX)
+        loseOLabel.text = String(GameStats.shared.loseO)
+        winnerLabel.text = GameStats.shared.predictWinner()
     }
 
 }

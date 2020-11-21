@@ -42,8 +42,14 @@ class ViewController: UIViewController {
 
                 if currentBoard[state[0]] == 1 {
                     WinnerLabel.text = "X has Won!"
+                    GameStats.shared.gamesPlayed += 1
+                    GameStats.shared.winX += 1
+                    GameStats.shared.loseO += 1
                 } else {
                     WinnerLabel.text = "O has Won!"
+                    GameStats.shared.gamesPlayed += 1
+                    GameStats.shared.winO += 1
+                    GameStats.shared.loseX += 1
                 }
                 if gameActive == true{
                     for i in currentBoard{
@@ -52,10 +58,12 @@ class ViewController: UIViewController {
                     if count != 0
                     {
                         WinnerLabel.text = "Draw. No Winners!"
+                        GameStats.shared.gamesPlayed += 1
                     }
                 }
                 WinnerLabel.isHidden = false
         }
     }
 }
+
 }

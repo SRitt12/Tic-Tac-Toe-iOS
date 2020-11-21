@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F207F612568EA5C00DCF6FD /* GameStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F207F602568EA5C00DCF6FD /* GameStats.swift */; };
 		3F667438255C64B900E29DAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F667437255C64B900E29DAF /* AppDelegate.swift */; };
 		3F66743A255C64B900E29DAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F667439255C64B900E29DAF /* SceneDelegate.swift */; };
 		3F66743C255C64B900E29DAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F66743B255C64B900E29DAF /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F207F602568EA5C00DCF6FD /* GameStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStats.swift; sourceTree = "<group>"; };
 		3F667434255C64B900E29DAF /* Tic-Tac-Toe-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-Tac-Toe-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F667437255C64B900E29DAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F667439255C64B900E29DAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				3F667437255C64B900E29DAF /* AppDelegate.swift */,
 				3F667439255C64B900E29DAF /* SceneDelegate.swift */,
 				3F66743B255C64B900E29DAF /* ViewController.swift */,
+				3F207F602568EA5C00DCF6FD /* GameStats.swift */,
 				3FBC52F425636FD000FF64CB /* HistoryViewController.swift */,
 				3F66743D255C64B900E29DAF /* Main.storyboard */,
 				3F667440255C64BB00E29DAF /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				3F667438255C64B900E29DAF /* AppDelegate.swift in Sources */,
 				3F66743A255C64B900E29DAF /* SceneDelegate.swift in Sources */,
 				3FBC52F525636FD000FF64CB /* HistoryViewController.swift in Sources */,
+				3F207F612568EA5C00DCF6FD /* GameStats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
