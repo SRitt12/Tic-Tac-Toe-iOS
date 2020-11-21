@@ -182,57 +182,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-iH-Nkr">
                                 <rect key="frame" x="184" y="392" width="46" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INs-QI-dOp" userLabel="Square01 Button">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-70-zF7">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LV8-oZ-iUZ"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYE-0i-Sxa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6W-q0-esd">
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44S-Bk-a6Q">
                                         <rect key="frame" x="0.0" y="128" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOM-H7-aDo"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzW-Wx-ksd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwY-Cu-O0a">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-wi-g6S">
                                         <rect key="frame" x="0.0" y="256" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG7-Wa-8zK"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="io4-M2-YBc">
-                                <rect key="frame" x="59" y="392" width="46" height="286"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-XG-QyI">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yf8-kY-Abq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sq-cL-TBM" userLabel="Square10 Button">
-                                        <rect key="frame" x="0.0" y="128" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFC-gB-Fpq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkB-Vh-NUe">
-                                        <rect key="frame" x="0.0" y="256" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ccl-oR-rza"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="agH-ql-RhJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -246,28 +214,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-tH-BQa">
                                 <rect key="frame" x="310" y="392" width="46" height="286"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKn-Ne-g78" userLabel="Square02 Button">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4i1-1q-J08">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6w-zI-aaF"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7C-wi-Aha"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94X-MA-xdi">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV2-gD-ADO">
                                         <rect key="frame" x="0.0" y="128" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LV-33-k48"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFr-Sp-hdx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMA-GS-KT2">
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-TX-L7d">
                                         <rect key="frame" x="0.0" y="256" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
+                                        <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrA-gg-Z0m"/>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CUv-EQ-asy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -284,6 +249,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="98" translatesAutoresizingMaskIntoConstraints="NO" id="io4-M2-YBc">
+                                <rect key="frame" x="59" y="392" width="46" height="286"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvG-T4-d0W">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWY-bj-W47"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUt-D3-aix">
+                                        <rect key="frame" x="0.0" y="128" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ise-B1-01h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWX-UW-1eH">
+                                        <rect key="frame" x="0.0" y="256" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="playerMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPj-ep-9ed"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -316,15 +307,6 @@
                     <connections>
                         <outlet property="TurnLabel" destination="X0Q-qM-5eH" id="ZEZ-JP-DhZ"/>
                         <outlet property="WinnerLabel" destination="Kyb-DX-Dgc" id="3Y2-eN-iu8"/>
-                        <outlet property="square01_0Button" destination="4sq-cL-TBM" id="9LW-hH-Qbl"/>
-                        <outlet property="square0_0Button" destination="Gqb-XG-QyI" id="cjU-Ej-amH"/>
-                        <outlet property="square0_1Button" destination="INs-QI-dOp" id="SJN-mV-Ggn"/>
-                        <outlet property="square0_2Button" destination="TKn-Ne-g78" id="phm-Jh-5zX"/>
-                        <outlet property="square1_1Button" destination="b6W-q0-esd" id="349-Z3-Ll1"/>
-                        <outlet property="square1_2Button" destination="94X-MA-xdi" id="Lzi-Gg-Dc8"/>
-                        <outlet property="square2_0Button" destination="ZkB-Vh-NUe" id="Src-K5-717"/>
-                        <outlet property="square2_1Button" destination="qwY-Cu-O0a" id="6Cp-l2-p7q"/>
-                        <outlet property="square2_2Button" destination="oMA-GS-KT2" id="vSa-8g-ias"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
